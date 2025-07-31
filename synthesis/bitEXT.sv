@@ -4,10 +4,10 @@ module bitEXT(
     
     output logic [31:0] Out
 );
-    reg {31:0} Immediate;
+    reg [31:0] Immediate;
     
     assign Out = Immediate;
-    case (Immtype)
+    case (Immtype) begin
         2'b00: begin
             Immediate = {{20{Inst[31]}}, Inst[31:20]};
         end
@@ -20,5 +20,5 @@ module bitEXT(
         2'b11: begin
             Immediate = {{12{Inst[31]}}, Inst[31:12]};
         end
-    
+    end
 endmodule
