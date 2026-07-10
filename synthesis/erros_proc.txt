@@ -1,0 +1,14 @@
+bitEXT.sv:12: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+bitEXT.sv:12: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+bitEXT.sv:12: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+bitEXT.sv:12: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+bitEXT.sv:12: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+bitEXT.sv:12: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+bitEXT.sv:12: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+bitEXT.sv:12: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+ALU.sv:16: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+proc.sv:146: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+tb/tb_proc.sv:46: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+bitEXT.sv:13: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+Control.sv:64: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+Control.sv:86: vvp.tgt sorry: Case unique/unique0 qualities are ignored.

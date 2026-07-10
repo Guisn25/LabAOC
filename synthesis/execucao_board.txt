@@ -1,0 +1,836 @@
+WARNING: ROM.sv:16: $readmemh(test.mem): Not enough words in the file for the requested range [0:31].
+VCD info: dumpfile tests/board.vcd opened for output.
+------------------------------------------------------------
+t=10000
+PC         = xxxxxxxx
+Instruction= xxxxxxxx
+State      = 0
+MemAddr    = xxxxxxxx
+Write      = 0
+WriteData  = xxxxxxxx
+ReadData   = xxxxxxxx
+MemoryWord = xxxxxxxx
+------------------------------------------------------------
+t=30000
+PC         = 00000000
+Instruction= 00000000
+State      = 0
+MemAddr    = 00000000
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00308093
+MemoryWord = 00308093
+------------------------------------------------------------
+t=50000
+PC         = 00000000
+Instruction= 00000000
+State      = 0
+MemAddr    = 00000000
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00308093
+MemoryWord = 00308093
+------------------------------------------------------------
+t=70000
+PC         = 00000002
+Instruction= 00308093
+State      = 1
+MemAddr    = 00000002
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00100113
+MemoryWord = 00100113
+------------------------------------------------------------
+t=90000
+PC         = 00000002
+Instruction= 00308093
+State      = 4
+MemAddr    = 00000002
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00100113
+MemoryWord = 00100113
+------------------------------------------------------------
+t=110000
+PC         = 00000002
+Instruction= 00308093
+State      = 10
+MemAddr    = 00000002
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00100113
+MemoryWord = 00100113
+------------------------------------------------------------
+t=130000
+PC         = 00000002
+Instruction= 00308093
+State      = 0
+MemAddr    = 00000002
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00100113
+MemoryWord = 00100113
+------------------------------------------------------------
+t=150000
+PC         = 00000004
+Instruction= 00100113
+State      = 1
+MemAddr    = 00000004
+Write      = 0
+WriteData  = 00000000
+ReadData   = 402080b3
+MemoryWord = 402080b3
+------------------------------------------------------------
+t=170000
+PC         = 00000004
+Instruction= 00100113
+State      = 4
+MemAddr    = 00000004
+Write      = 0
+WriteData  = 00000003
+ReadData   = 402080b3
+MemoryWord = 402080b3
+------------------------------------------------------------
+t=190000
+PC         = 00000004
+Instruction= 00100113
+State      = 10
+MemAddr    = 00000004
+Write      = 0
+WriteData  = 00000003
+ReadData   = 402080b3
+MemoryWord = 402080b3
+------------------------------------------------------------
+t=210000
+PC         = 00000004
+Instruction= 00100113
+State      = 0
+MemAddr    = 00000004
+Write      = 0
+WriteData  = 00000003
+ReadData   = 402080b3
+MemoryWord = 402080b3
+------------------------------------------------------------
+t=230000
+PC         = 00000006
+Instruction= 402080b3
+State      = 1
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000003
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=250000
+PC         = 00000006
+Instruction= 402080b3
+State      = 2
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=270000
+PC         = 00000006
+Instruction= 402080b3
+State      = 10
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=290000
+PC         = 00000006
+Instruction= 402080b3
+State      = 0
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=310000
+PC         = 00000008
+Instruction= 00100f23
+State      = 1
+MemAddr    = 00000008
+Write      = 0
+WriteData  = 00000001
+ReadData   = 01e00403
+MemoryWord = 01e00403
+------------------------------------------------------------
+t=330000
+PC         = 00000008
+Instruction= 00100f23
+State      = 3
+MemAddr    = 00000007
+Write      = 0
+WriteData  = 00000002
+ReadData   = 0f2301e0
+MemoryWord = 0f2301e0
+------------------------------------------------------------
+t=350000
+PC         = 00000008
+Instruction= 00100f23
+State      = 8
+MemAddr    = 0000001e
+Write      = 1
+WriteData  = 00000002
+ReadData   = xxxxxxxx
+MemoryWord = xxxxxxxx
+------------------------------------------------------------
+t=370000
+PC         = 00000008
+Instruction= 00100f23
+State      = 0
+MemAddr    = 00000008
+Write      = 0
+WriteData  = 00000002
+ReadData   = 01e00403
+MemoryWord = 01e00403
+------------------------------------------------------------
+t=390000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 1
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000002
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=410000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 4
+MemAddr    = 00000026
+Write      = 0
+WriteData  = 00000000
+ReadData   = xxxxxxxx
+MemoryWord = xxxxxxxx
+------------------------------------------------------------
+t=430000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 7
+MemAddr    = 0000001e
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000002
+MemoryWord = 00000002
+------------------------------------------------------------
+t=450000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 9
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=470000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 0
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=490000
+PC         = 0000000c
+Instruction= 00800463
+State      = 1
+MemAddr    = 0000000c
+Write      = 0
+WriteData  = 00000000
+ReadData   = ffff81ef
+MemoryWord = ffff81ef
+------------------------------------------------------------
+t=510000
+PC         = 0000000c
+Instruction= 00800463
+State      = 5
+MemAddr    = 0000000c
+Write      = 0
+WriteData  = 00000002
+ReadData   = ffff81ef
+MemoryWord = ffff81ef
+------------------------------------------------------------
+t=530000
+PC         = 0000000c
+Instruction= 00800463
+State      = 0
+MemAddr    = 0000000c
+Write      = 0
+WriteData  = 00000002
+ReadData   = ffff81ef
+MemoryWord = ffff81ef
+------------------------------------------------------------
+t=550000
+PC         = 0000000e
+Instruction= ffff81ef
+State      = 1
+MemAddr    = 0000000e
+Write      = 0
+WriteData  = 00000002
+ReadData   = 00000073
+MemoryWord = 00000073
+------------------------------------------------------------
+t=570000
+PC         = 0000000e
+Instruction= ffff81ef
+State      = 6
+MemAddr    = 0000000e
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000073
+MemoryWord = 00000073
+------------------------------------------------------------
+t=590000
+PC         = 00000004
+Instruction= ffff81ef
+State      = 10
+MemAddr    = 00000004
+Write      = 0
+WriteData  = 00000000
+ReadData   = 402080b3
+MemoryWord = 402080b3
+------------------------------------------------------------
+t=610000
+PC         = 00000004
+Instruction= ffff81ef
+State      = 0
+MemAddr    = 00000004
+Write      = 0
+WriteData  = 00000000
+ReadData   = 402080b3
+MemoryWord = 402080b3
+------------------------------------------------------------
+t=630000
+PC         = 00000006
+Instruction= 402080b3
+State      = 1
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=650000
+PC         = 00000006
+Instruction= 402080b3
+State      = 2
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=670000
+PC         = 00000006
+Instruction= 402080b3
+State      = 10
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=690000
+PC         = 00000006
+Instruction= 402080b3
+State      = 0
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=710000
+PC         = 00000008
+Instruction= 00100f23
+State      = 1
+MemAddr    = 00000008
+Write      = 0
+WriteData  = 00000001
+ReadData   = 01e00403
+MemoryWord = 01e00403
+------------------------------------------------------------
+t=730000
+PC         = 00000008
+Instruction= 00100f23
+State      = 3
+MemAddr    = 00000007
+Write      = 0
+WriteData  = 00000001
+ReadData   = 0f2301e0
+MemoryWord = 0f2301e0
+------------------------------------------------------------
+t=750000
+PC         = 00000008
+Instruction= 00100f23
+State      = 8
+MemAddr    = 0000001e
+Write      = 1
+WriteData  = 00000001
+ReadData   = 00000002
+MemoryWord = 00000002
+------------------------------------------------------------
+t=770000
+PC         = 00000008
+Instruction= 00100f23
+State      = 0
+MemAddr    = 00000008
+Write      = 0
+WriteData  = 00000001
+ReadData   = 01e00403
+MemoryWord = 01e00403
+------------------------------------------------------------
+t=790000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 1
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=810000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 4
+MemAddr    = 00000026
+Write      = 0
+WriteData  = 00000000
+ReadData   = xxxxxxxx
+MemoryWord = xxxxxxxx
+------------------------------------------------------------
+t=830000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 7
+MemAddr    = 0000001e
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000001
+MemoryWord = 00000001
+------------------------------------------------------------
+t=850000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 9
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=870000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 0
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=890000
+PC         = 0000000c
+Instruction= 00800463
+State      = 1
+MemAddr    = 0000000c
+Write      = 0
+WriteData  = 00000000
+ReadData   = ffff81ef
+MemoryWord = ffff81ef
+------------------------------------------------------------
+t=910000
+PC         = 0000000c
+Instruction= 00800463
+State      = 5
+MemAddr    = 0000000c
+Write      = 0
+WriteData  = 00000001
+ReadData   = ffff81ef
+MemoryWord = ffff81ef
+------------------------------------------------------------
+t=930000
+PC         = 0000000c
+Instruction= 00800463
+State      = 0
+MemAddr    = 0000000c
+Write      = 0
+WriteData  = 00000001
+ReadData   = ffff81ef
+MemoryWord = ffff81ef
+------------------------------------------------------------
+t=950000
+PC         = 0000000e
+Instruction= ffff81ef
+State      = 1
+MemAddr    = 0000000e
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00000073
+MemoryWord = 00000073
+------------------------------------------------------------
+t=970000
+PC         = 0000000e
+Instruction= ffff81ef
+State      = 6
+MemAddr    = 0000000e
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000073
+MemoryWord = 00000073
+------------------------------------------------------------
+t=990000
+PC         = 00000004
+Instruction= ffff81ef
+State      = 10
+MemAddr    = 00000004
+Write      = 0
+WriteData  = 00000000
+ReadData   = 402080b3
+MemoryWord = 402080b3
+------------------------------------------------------------
+t=1010000
+PC         = 00000004
+Instruction= ffff81ef
+State      = 0
+MemAddr    = 00000004
+Write      = 0
+WriteData  = 00000000
+ReadData   = 402080b3
+MemoryWord = 402080b3
+------------------------------------------------------------
+t=1030000
+PC         = 00000006
+Instruction= 402080b3
+State      = 1
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=1050000
+PC         = 00000006
+Instruction= 402080b3
+State      = 2
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=1070000
+PC         = 00000006
+Instruction= 402080b3
+State      = 10
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=1090000
+PC         = 00000006
+Instruction= 402080b3
+State      = 0
+MemAddr    = 00000006
+Write      = 0
+WriteData  = 00000001
+ReadData   = 00100f23
+MemoryWord = 00100f23
+------------------------------------------------------------
+t=1110000
+PC         = 00000008
+Instruction= 00100f23
+State      = 1
+MemAddr    = 00000008
+Write      = 0
+WriteData  = 00000001
+ReadData   = 01e00403
+MemoryWord = 01e00403
+------------------------------------------------------------
+t=1130000
+PC         = 00000008
+Instruction= 00100f23
+State      = 3
+MemAddr    = 00000007
+Write      = 0
+WriteData  = 00000000
+ReadData   = 0f2301e0
+MemoryWord = 0f2301e0
+------------------------------------------------------------
+t=1150000
+PC         = 00000008
+Instruction= 00100f23
+State      = 8
+MemAddr    = 0000001e
+Write      = 1
+WriteData  = 00000000
+ReadData   = 00000001
+MemoryWord = 00000001
+------------------------------------------------------------
+t=1170000
+PC         = 00000008
+Instruction= 00100f23
+State      = 0
+MemAddr    = 00000008
+Write      = 0
+WriteData  = 00000000
+ReadData   = 01e00403
+MemoryWord = 01e00403
+------------------------------------------------------------
+t=1190000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 1
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=1210000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 4
+MemAddr    = 00000026
+Write      = 0
+WriteData  = 00000000
+ReadData   = xxxxxxxx
+MemoryWord = xxxxxxxx
+------------------------------------------------------------
+t=1230000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 7
+MemAddr    = 0000001e
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000000
+MemoryWord = 00000000
+------------------------------------------------------------
+t=1250000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 9
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=1270000
+PC         = 0000000a
+Instruction= 01e00403
+State      = 0
+MemAddr    = 0000000a
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00800463
+MemoryWord = 00800463
+------------------------------------------------------------
+t=1290000
+PC         = 0000000c
+Instruction= 00800463
+State      = 1
+MemAddr    = 0000000c
+Write      = 0
+WriteData  = 00000000
+ReadData   = ffff81ef
+MemoryWord = ffff81ef
+------------------------------------------------------------
+t=1310000
+PC         = 0000000c
+Instruction= 00800463
+State      = 5
+MemAddr    = 0000000c
+Write      = 0
+WriteData  = 00000000
+ReadData   = ffff81ef
+MemoryWord = ffff81ef
+------------------------------------------------------------
+t=1330000
+PC         = 00000012
+Instruction= 00800463
+State      = 0
+MemAddr    = 00000012
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00100013
+MemoryWord = 00100013
+------------------------------------------------------------
+t=1350000
+PC         = 00000014
+Instruction= 00100013
+State      = 1
+MemAddr    = 00000014
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00018067
+MemoryWord = 00018067
+------------------------------------------------------------
+t=1370000
+PC         = 00000014
+Instruction= 00100013
+State      = 4
+MemAddr    = 00000014
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00018067
+MemoryWord = 00018067
+------------------------------------------------------------
+t=1390000
+PC         = 00000014
+Instruction= 00100013
+State      = 10
+MemAddr    = 00000014
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00018067
+MemoryWord = 00018067
+------------------------------------------------------------
+t=1410000
+PC         = 00000014
+Instruction= 00100013
+State      = 0
+MemAddr    = 00000014
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00018067
+MemoryWord = 00018067
+------------------------------------------------------------
+t=1430000
+PC         = 00000016
+Instruction= 00018067
+State      = 1
+MemAddr    = 00000016
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00200013
+MemoryWord = 00200013
+------------------------------------------------------------
+t=1450000
+PC         = 00000016
+Instruction= 00018067
+State      = 4
+MemAddr    = 00000016
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00200013
+MemoryWord = 00200013
+------------------------------------------------------------
+t=1470000
+PC         = 0000000e
+Instruction= 00018067
+State      = 10
+MemAddr    = 0000000e
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000073
+MemoryWord = 00000073
+------------------------------------------------------------
+t=1490000
+PC         = 0000000e
+Instruction= 00018067
+State      = 0
+MemAddr    = 0000000e
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000073
+MemoryWord = 00000073
+------------------------------------------------------------
+t=1510000
+PC         = 00000010
+Instruction= 00000073
+State      = 1
+MemAddr    = 00000010
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000013
+MemoryWord = 00000013
+------------------------------------------------------------
+t=1530000
+PC         = 00000010
+Instruction= 00000073
+State      = 4
+MemAddr    = 00000010
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000013
+MemoryWord = 00000013
+------------------------------------------------------------
+t=1550000
+PC         = 00000010
+Instruction= 00000073
+State      = 11
+MemAddr    = 00000010
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000013
+MemoryWord = 00000013
+------------------------------------------------------------
+t=1570000
+PC         = 00000010
+Instruction= 00000073
+State      = 11
+MemAddr    = 00000010
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000013
+MemoryWord = 00000013
+------------------------------------------------------------
+t=1590000
+PC         = 00000010
+Instruction= 00000073
+State      = 11
+MemAddr    = 00000010
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000013
+MemoryWord = 00000013
+------------------------------------------------------------
+t=1610000
+PC         = 00000010
+Instruction= 00000073
+State      = 11
+MemAddr    = 00000010
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000013
+MemoryWord = 00000013
+------------------------------------------------------------
+t=1630000
+PC         = 00000010
+Instruction= 00000073
+State      = 11
+MemAddr    = 00000010
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000013
+MemoryWord = 00000013
+------------------------------------------------------------
+t=1650000
+PC         = 00000010
+Instruction= 00000073
+State      = 11
+MemAddr    = 00000010
+Write      = 0
+WriteData  = 00000000
+ReadData   = 00000013
+MemoryWord = 00000013
+
+Simulation finished.
+
+tb/tb_board.sv:80: $finish called at 1650000 (1ps)

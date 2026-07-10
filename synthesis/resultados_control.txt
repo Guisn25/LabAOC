@@ -1,0 +1,69 @@
+VCD info: dumpfile tests/Control.vcd opened for output.
+RESET
+[PASS]                  FETCH : PCwrite
+[PASS]                  FETCH : IRwrite
+[PASS]                  FETCH : ALUsrcA
+[PASS]                  FETCH : ALUsrcB
+[PASS]                      FETCH : ADD
+[PASS]                   FETCH : RETsrc
+[PASS]        DECODE : PCwrite disabled
+[PASS]        DECODE : IRwrite disabled
+[PASS]                 DECODE : ALUsrcA
+[PASS]                 DECODE : ALUsrcB
+[PASS]                              ADD
+[PASS]                              SUB
+[PASS]                              SLL
+[PASS]                      SLT compare
+[PASS]                     SLTU compare
+[PASS]                              XOR
+[PASS]                              SRL
+[PASS]                              SRA
+[PASS]                               OR
+[PASS]                              AND
+RESET
+[PASS]                             ADDI
+[PASS]                             SLTI
+[PASS]                            SLTIU
+[PASS]                             XORI
+[PASS]                              ORI
+[PASS]                             ANDI
+RESET
+[PASS]                   LOAD immediate
+[PASS]                               LB
+[PASS]                               LH
+[PASS]                               LW
+[PASS]                              LBU
+[PASS]                              LHU
+RESET
+[PASS]                  STORE immediate
+[PASS]                               SB
+[PASS]                               SH
+[PASS]                               SW
+RESET
+[PASS]                 Branch Immediate
+[PASS]                        BEQ taken
+[PASS]                        BNE taken
+[PASS]                        BLT taken
+RESET
+[PASS]                    LUI immediate
+RESET
+[PASS]                  AUIPC immediate
+RESET
+[PASS]                    JAL immediate
+RESET
+[PASS]                   JALR immediate
+RESET
+[PASS] xecuted without simulation crash
+RESET
+[PASS]                       Not Halted
+[PASS]                       Not Halted
+[PASS]                           Halted
+[PASS]                     Still Halted
+[PASS]                 Yet Still Halted
+
+===============================================
+Tests Passed : 50
+Tests Failed : 0
+===============================================
+
+tb/tb_Control.sv:685: $finish called at 992000 (1ps)

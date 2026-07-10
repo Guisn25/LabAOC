@@ -1,0 +1,408 @@
+%% abtex2-modelo-relatorio-tecnico.tex, v-1.9.6 laurocesar
+%% Copyright 2012-2016 by abnTeX2 group at http://www.abntex.net.br/ 
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on 
+%% http://www.abntex.net.br/
+%%
+%% This work consists of the files abntex2-modelo-relatorio-tecnico.tex,
+%% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
+%%
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Relatório Técnico/Acadêmico em conformidade com 
+% ABNT NBR 10719:2015 Informação e documentação - Relatório técnico e/ou
+% científico - Apresentação
+% ------------------------------------------------------------------------ 
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	%twoside,			% para impressão em recto e verso. Oposto a oneside
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil,				% o último idioma é o principal do documento
+	]{abntex2}
+
+
+
+% PACOTES
+
+% ---
+% Pacotes fundamentais 
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+% ---
+
+% Pacotes adicionais, usados no anexo do modelo de folha de identificação
+\usepackage{multicol}
+\usepackage{multirow}
+
+\usepackage{float} % para utilizar o H de tabelas e figuras e mante-las no lugar
+% ---
+
+%----------------- PARA INSERIR ARQUIVOS DE CODIGOS -----------------%
+\usepackage{xcolor}
+% Definindo novas cores
+\definecolor{verde}{rgb}{0,0.5,0}
+% Configurando layout para mostrar codigos C++
+\usepackage{listings}
+\lstset{
+  language=Verilog, %indicar a linguagem utilizada
+  basicstyle=\ttfamily\tiny, 
+  keywordstyle=\color{blue}, 
+  stringstyle=\color{verde}, 
+  commentstyle=\color{gray}, 
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{green!10},
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+}
+% -----------------% FIM INSERIR ARQUIVOs DE CODIGO -----------------%
+
+% Pacotes de citações
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[num]{abntex2cite}	% Citações padrão ABNT
+\citebrackets() %citação numérica entre colchetes
+% --- 
+
+
+% CONFIGURAÇÕES DE PACOTES
+
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+
+% Informações de dados para CAPA e FOLHA DE ROSTO
+\titulo{Desenvolvimento da Unidade de Processamento 
+\\de um processador com arquitetura RISC-V multiciclo}
+\autor{ID: .......} %NAO PREENCHER
+\local{São José dos Campos - Brasil}
+\data{Junho de 2025}
+\instituicao{
+  Docente: Prof. Dr. Tiago de Oliveira
+  \par
+  Universidade Federal de São Paulo - UNIFESP
+  \par
+  Instituto de Ciência e Tecnologia - Campus São José dos Campos
+}
+\tipotrabalho{Relatório técnico}
+\preambulo{Relatório apresentado à Universidade Federal de São Paulo como parte dos requisitos para aprovação na disciplina de Laboratório de Sistemas Computacionais: Arquitetura e Organização de Computadores.}
+% ---
+
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+
+% Espaçamentos entre linhas e parágrafos 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% compila o indice
+\makeindex
+% ---
+
+
+
+% ------------------------------------------------
+% Início do documento
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+\imprimirfolhaderosto*
+% ---
+
+% ---
+% RESUMO
+% resumo na língua vernácula (obrigatório)
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+ Este relatório apresenta o desenvolvimento de uma unidade de processamento
+ para um processador RISC-V multiciclo.
+ O foco principal foi implementar a lógica de execução de algumas instruções do módulo RV32I, utilizando SystemVerilog. 
+ A unidade de controle foi desconsiderada neste estágio, 
+ e o objetivo foi validar a integração entre ALU, banco de registradores, multiplexadores e lógica de PC. 
+
+ \noindent
+ \textbf{Palavras-chaves}: RISC-V. SystemVerilog. Processador. Multiciclo.
+\end{resumo}
+
+%------LISTAS SÃO OPCIONAIS---------
+% inserir lista de ilustrações
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\clearpage
+
+% inserir lista de tabelas
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\clearpage
+% ---
+
+%SUMÁRIO É OBRIGATÓRIO
+% inserir o sumario
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+% ---
+
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+\textual
+
+% ----------------------------------------------------------
+\chapter{Introdução}
+Este relatório foi desenvolvido como parte da disciplina de 
+Laboratório de Sistemas Computacionais: Arquitetura e Organização de Computadores.
+O objetivo central é implementar uma unidade de processamento para um processador RISC-V 
+com abordagem multiciclo. A arquitetura foi projetada para ser modular e extensível, 
+facilitando futuras integrações com unidade de controle, periféricos e outros módulos para o conjunto de intruções.
+
+O projeto é baseado em um diagrama de blocos que representa os principais componentes de um processador: 
+banco de registradores, \emph{ALU}, multiplexadores, registradores intermediários (como A, B, ALUOut), 
+unidade de memória e extensores de sinal. O design foi desenvolvido em SystemVerilog.
+%------------------- MODELO DE FIGURA -----------------------------
+Modelo da \autoref{fig:esquematico}:
+\begin{figure}[H]
+\centering 
+\caption{Esquematico} \label{fig:esquematico}
+\includegraphics[scale=0.3]{esquematico.png}
+\legend{Fonte: Computer Organization and Design \cite{patterson2007} }
+\end{figure}
+
+
+%------------------- MODELO DE TABELA -----------------------------
+Modelo da \autoref{tab:Instr3OP}:
+\begin{table}[htb]
+\centering
+\ABNTEXfontereduzida
+\caption{Exemplo de um formato de Instruções} \label{tab:Instr3OP}
+\begin{tabular}{r|p{2cm}|p{1.7cm}|p{1.7cm}|p{1.7cm}|p{3cm}} 
+\textbf{Tamanho (bits)} & 6 & 5 & 5 & 5 & 11 \\ \hline
+\textbf{Campo} & OPcode & Reg1 & Reg2 & Reg3 & Blank \\ \hline
+\textbf{Bits} & 31 - 26 & 25 - 21 & 20 - 16 & 15 - 11 & 10 - 0\\
+\end{tabular}
+\legend{Fonte: O Autor}
+\end{table}
+
+Como utilizar \textbf{Anexos}
+Material que não seja de autoria própria que traga maiores detalhes de algo utilizado no decorrer do relatório
+
+Como utilizar \textbf{Apêndices}
+Material de autoria própria que traga maiores detalhes e que não seja essencial no decorrer do relatório.
+
+Modos de comandos $\backslash$ref\\
+$\backslash$ref: \ref{fig:esquematico}\\
+$\backslash$nameref: \nameref{fig:esquematico}\\
+$\backslash$autoref: \autoref{fig:esquematico}\\
+
+Existe uma forma de inserir arquivos de códigos diretamente no latex, verificar a formatação nas linhas 70 a 93 do código latex e a inserção feita do código \nameref{code:BinToBCD2.v} no \autoref{code:BinToBCD2.v} 
+
+\chapter[Objetivos]{Objetivos}
+
+\section{Geral}
+Implementar uma unidade de processamento funcional baseada na arquitetura RISC-V multiciclo, 
+utilizando SystemVerilog para as instruções principais do conjunto RV32I.
+\section{Específico}
+
+\begin{itemize}
+\item Desenvolver e interconectar os módulos da ALU, banco de registradores e demais componentes conforme o diagrama de blocos fornecido.
+
+\item Possibilitar a execução correta de instruções como ADD, SUB, AND, LW, SW, BEQ, JAL, entre outras.
+
+\end{itemize}
+
+\chapter{Fundamentação Teórica}
+A implementação de um processador RISC-V multiciclo envolve conhecimentos consolidados em organização e arquitetura de computadores, 
+especialmente no que diz respeito ao fluxo de dados e controle de instruções. Segundo Patterson e Hennessy (2014), 
+a abordagem multiciclo divide a execução de cada instrução em etapas distintas 
+— como busca de instrução (\emph{IF}), decodificação (\emph{ID}), execução (\emph{EX}), acesso à memória (\emph{MEM}) e escrita no registrador (\emph{WB}) — 
+permitindo a reutilização de componentes em diferentes ciclos do clock. Essa estratégia é fundamental para otimizar a utilização do hardware e facilitar o controle de cada etapa de execução.
+
+A arquitetura RISC-V, proposta inicialmente por Waterman e Asanović (2016), é uma \emph{ISA}(\emph{Instruction Set Architecture}) de código aberto que prioriza simplicidade, modularidade e extensibilidade. 
+O conjunto base de instruções RV32I define operações aritméticas, lógicas, de controle de fluxo e acesso à memória, suficientes para a implementação de um processador funcional. 
+
+O funcionamento correto da unidade de processamento depende da cooperação entre diversos módulos. A \emph{ALU} (\emph{Arithmetic Logic Unit}), 
+realiza operações como adição, subtração, operações lógicas e comparações, é um dos principais componentes e deve ser projetada para suportar os sinais de operação definidos no conjunto RV32I. 
+O banco de registradores, com 32 registradores de 32 bits, armazena e fornece operandos às instruções. O controle de leitura e escrita nesse banco é feito por meio de sinais sincronizados com o clock.
+
+Outros elementos fundamentais incluem os registradores intermediários que guardam certos dados entre os ciclos,
+os multiplexadores, responsáveis pela seleção de dados entre diferentes fontes, e os extensores de sinal, 
+que são usados para adaptar imediatos de 12 ou 20 bits para o tamanho padrão de 32 bits. 
+\chapter{Desenvolvimento}
+
+
+\chapter{Resultados Obtidos e Discussões}
+
+
+\chapter{Considerações Finais}
+
+
+
+% ---
+% Finaliza a parte no bookmark do PDF
+% para que se inicie o bookmark na raiz
+% e adiciona espaço de parte no Sumário
+% ---
+\phantompart
+
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{referencias}
+
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+% ---
+% Inicia os apêndices
+% ---
+\begin{apendicesenv}
+
+% Imprime uma página indicando o início dos apêndices
+\partapendices
+
+% ----------------------------------------------------------
+\chapter{BinToBCD2.v}
+\label{code:BinToBCD2.v}
+Código do arquivo BinToBCD2.v
+\lstinputlisting{Codigos/BinToBCD2.v} 
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+\chapter{Apêndice 2}
+% ----------------------------------------------------------
+
+
+\end{apendicesenv}
+% ---
+
+
+% ----------------------------------------------------------
+% Anexos
+% ----------------------------------------------------------
+
+% ---
+% Inicia os anexos
+% ---
+\begin{anexosenv}
+
+% Imprime uma página indicando o início dos anexos
+\partanexos
+
+% ---
+\chapter{Anexo 1}
+% ---
+
+% ---
+\chapter{Anexo 2}
+% ---
+
+\end{anexosenv}
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+
+\phantompart
+
+\printindex
+
+
+\end{document}
